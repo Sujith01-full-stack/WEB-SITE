@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider Gallery</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, rgb(247, 250, 251), #b0d5dbf4);
+      color: #4400ffe8;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #100808;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h2 {
+      color: #fb0303;
+      margin: 30px 0 10px;
+      font-size: 1.4rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(253, 0, 0, 0.2);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    a.frame {
+      display: block;
+      text-decoration: none;
+      background: #ff04d9;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(255, 255, 20, 0.958);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+      overflow: hidden;
+      position: relative;
+      color: rgb(195, 27, 27);
+    }
+
+    a.frame:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 213, 255, 0.907);
+    }
+
+    .frame img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .frame:hover img {
+      transform: scale(1.05);
+    }
+
+    .frame::after {
+      content: "📦 Order Now";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(239, 5, 5, 0.952);
+      color: #fff;
+      padding: 8px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .frame:hover::after {
+      opacity: 1;
+    }
+
+    .price {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #070a09;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #1f203f;
+      border-top: 2px solid rgba(149, 32, 32, 0.2);
+      padding-top: 15px;
+    }
+
+    footer span {
+      color: #ff061b;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      .frame {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🕷 Spider Gallery 🕸</h1>
+
+  <!-- 12x18 -->
+  <h2>FRAME SIZE (12x18) —> Rs: 699 to 799</h2>
+  <div class="gallery">
+      <img src="12x18.jpg" alt="12x18 Frame ">
+      <p class="price">12x18 Frame - Rs 799</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2012x18%20frame%20from%20Spider%20Gallery" target="_blank"></a>  
+    </a>
+      <img src="12x18 1.jpg" alt="12x18 Frame ">
+      <p class="price">12x18 Frame - Rs 799</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2012x18%20frame%20from%20Spider%20Gallery" target="_blank"></a>  
+    </a>
+  </div>
+
+  <!-- 10x15 -->
+  <h2>FRAME SIZE (10x15) —> Rs: 549 to 599</h2>
+  <div class="gallery">
+      <img src="10x15.jpg" alt="10x15 Frame ">
+      <p class="price">10x15 Frame - Rs 599</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2010x15%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+      <img src="10x15 1.jpg" alt="10x15 Frame ">
+      <p class="price">10x15 Frame - Rs 599</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2010x15%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <!-- 12x8 -->
+  <h2>FRAME SIZE (12x8) —> Rs: 299 to 349</h2>
+  <div class="gallery">
+      <img src="12x8.jpg" alt="12x8 Frame ">
+      <p class="price">12x8 Frame - Rs 349</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2012x8%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+     <img src="12x8 9.jpg" alt="12x8 Frame ">
+      <p class="price">12x8 Frame - Rs 349</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%2012x8%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <!-- 6x8 -->
+  <h2>FRAME SIZE (6x8) —> Rs: 199 to 249</h2>
+  <div class="gallery">
+    <img src="6x8 3.jpg" alt="6x8 Frame ">
+      <p class="price">6x8 Frame - Rs 249</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x8%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>  
+     <img src="6x8 4.jpg" alt="6x8 Frame ">
+      <p class="price">6x8 Frame - Rs 249</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x8%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <!-- 6x6 -->
+  <h2>FRAME SIZE (6x6) —> Rs: 169</h2>
+  <div class="gallery">
+      <img src="6x6 2.jpg" alt="6x6 Frame ">
+      <p class="price">6x6 Frame - Rs 169</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x6%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+      <img src="6x6 4.jpg" alt="6x6 Frame ">
+      <p class="price">6x6 Frame - Rs 169</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x6%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <!-- 6x4 -->
+  <h2>FRAME SIZE (6x4) —> Rs: 149</h2>
+  <div class="gallery">
+      <img src="6x4.jpg" alt="6x4 Frame ">
+      <p class="price">6x4 Frame - Rs 149</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x4%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+      <img src="6x4.jpg" alt="6x4 Frame ">
+      <p class="price">6x4 Frame - Rs 149</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%206x4%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <!-- 4x4 -->
+  <h2>FRAME SIZE (4x4) —> Rs: 99</h2>
+  <div class="gallery">
+      <img src="4x4.jpg" alt="4x4 Frame ">
+
+      
+      <p class="price">4x4 Frame - Rs 99</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%204x4%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+      <img src="4x4 2.jpg" alt="4x4 Frame ">
+      <p class="price">4x4 Frame - Rs 99</p>
+    <a class="frame" href="https://wa.me/919003912721?text=Hi,%20I%20want%20to%20order%20the%204x4%20frame%20from%20Spider%20Gallery" target="_blank">
+    </a>
+  </div>
+
+  <footer>
+    <p>@ 2025 <span>Spider_Gallery</span> | Designed with ❤️ by Sujith</p>
+  </footer>
+</body>
+</html>
+
